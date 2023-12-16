@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>HOME</title>
+</head>
+<body>
+    <header>
+        <h1>Design de Casa</h1>
+    </header>
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Início</a></li>
+            <li><a href="{% url 'elementos de design' %}">Elementos de Design</a></li>
+            <li><a href="#">Ferramentas</a></li>
+            <li><a href="{% url 'contatos' %}">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contatos">
+            <h6>Contatos</h6>
+            <p><b>Telefone: </b>(14) 3821-2425</p>
+            <p><b>Celular: </b>(14) 98771-1958</p>
+            <p><b>E-mail: </b>designcasa@designcasa.com</p>
+        </section>
+
+        <section class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.08656787179!2d-48.443138223743276!3d-22.910177637994117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6df00ad9e9761%3A0x82af7313ba02130!2sSENAI%20-%20Botucatu!5e0!3m2!1spt-BR!2sbr!4v1701620084439!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Design de Casa</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

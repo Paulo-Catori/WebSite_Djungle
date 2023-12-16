@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>HOME</title>
+</head>
+<body>
+    <header>
+        <h1>Design de Casa</h1>
+    </header>
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Início</a></li>
+            <li><a href="{% url 'elementos de design' %}">Elementos de Design</a></li>
+            <li><a href="#">Ferramentas</a></li>
+            <li><a href="{% url 'contatos' %}">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Introdução</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, adipisci illum. Recusandae ipsum assumenda voluptatibus odio vitae iste necessitatibus? Ducimus rem inventore molestias voluptas odit molestiae, suscipit aut commodi quidem!</p>
+            <article>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis quidem vel dolor quas deleniti voluptatum distinctio obcaecati quam est voluptatem, possimus, aut optio architecto ratione hic minus vero eligendi.
+                Nobis ipsum ut eos iure voluptas assumenda sapiente facilis modi alias explicabo aspernatur cum, ab reprehenderit dolorum veritatis minus dolores cumque eaque debitis quo dolorem! Nulla culpa quae blanditiis officiis.
+            </article>
+        </section>
+
+        <section>
+            <h2>Elementos de Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, adipisci illum. Recusandae ipsum assumenda voluptatibus odio vitae iste necessitatibus? Ducimus rem inventore molestias voluptas odit molestiae, suscipit aut commodi quidem!</p>
+            <article>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis quidem vel dolor quas deleniti voluptatum distinctio obcaecati quam est voluptatem, possimus, aut optio architecto ratione hic minus vero eligendi.
+                Nobis ipsum ut eos iure voluptas assumenda sapiente facilis modi alias explicabo aspernatur cum, ab reprehenderit dolorum veritatis minus dolores cumque eaque debitis quo dolorem! Nulla culpa quae blanditiis officiis.
+            </article>
+        </section>
+
+        <section>
+            <h2>Ferramentas de Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, adipisci illum. Recusandae ipsum assumenda voluptatibus odio vitae iste necessitatibus? Ducimus rem inventore molestias voluptas odit molestiae, suscipit aut commodi quidem!</p>
+            <article>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis quidem vel dolor quas deleniti voluptatum distinctio obcaecati quam est voluptatem, possimus, aut optio architecto ratione hic minus vero eligendi.
+                Nobis ipsum ut eos iure voluptas assumenda sapiente facilis modi alias explicabo aspernatur cum, ab reprehenderit dolorum veritatis minus dolores cumque eaque debitis quo dolorem! Nulla culpa quae blanditiis officiis.
+            </article>
+        </section>
+
+        <section>
+            <h2>Vídeo institucional</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jK1a0-lbo5k?si=Sl_cAlsU21nMYElQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Design de Casa</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
